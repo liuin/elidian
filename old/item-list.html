@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/shop.css"> 
+   		<link rel="stylesheet" href="css/item-list.css">
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script> 
+   		<script src="js/jquery.jpanelmenu.js"></script>
+		<title>二里店</title>
+	</head>
+	<body>
+		<style>
+			.item-standard{
+				position: relative;
+				display: inline-block;
+				border: 1px solid #CCCCCC;
+				padding: 1%;
+				margin: 1%;
+				border-radius: 5px;
+				font-size: 90%;
+			}
+		</style>
+		<style type="text/css">
+			/*Fontawesome Iconfont*/
+			
+			/*Montserrat, Open Sans*/
+			
+			* {margin: 0; padding: 0;}
+			#wrapper {}
+			/*Hiding the checkbox*/
+			#tm {display: none;}
+			/*Content area*/
+			section {
+				position: relative; transition: all 0.25s;
+			}
+			.items{
+				position: relative;
+				transition: all 0.25s;
+			}
+			/*Nav styles*/
+			.sidenav {
+				width: 150px;
+				position: absolute; left: 0; top: 0; bottom: 0; padding-top: 100px;
+				text-align:center;
+			}
+			.sidenav li {list-style-type: none;}
+			.sidenav a { color: black; text-decoration: none; }
+			.sidenav b {
+				font: bold 12px/48px Montserrat; display: block;
+				opacity: 0; transform: translateX(50px); transition: all 0.4s;
+			}
+			.sidenav i {
+				display: block; width: 50px; float: left; 
+				font-size: 16px; line-height: 48px; text-align: center;
+			}
+			/*Animation controls using checkbox hack*/
+			/*Animate content area to the right*/
+			#tm:checked ~ section {padding-left:150px}
+			/*Animate links from right to left + fade in effect*/
+			#tm:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+			#tm:checked ~ .sidenav {border:1px solid #EEEEEE;}
+			/*Adding delay to link animation - in multiples of .08s*/
+			/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+			#tm:checked ~ .sidenav li:nth-child(1) b {transition-delay: 0.08s;}
+			#tm:checked ~ .sidenav li:nth-child(2) b {transition-delay: 0.16s;}
+			#tm:checked ~ .sidenav li:nth-child(3) b {transition-delay: 0.24s;}
+			#tm:checked ~ .sidenav li:nth-child(4) b {transition-delay: 0.32s;}
+			#tm:checked ~ .sidenav li:nth-child(5) b {transition-delay: 0.40s;}
+			#tm:checked ~ .sidenav li:nth-child(6) b {transition-delay: 0.48s;}
+		</style>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+					<label for="tm"><span class="glyphicon glyphicon-list" style="color: red;margin-left: 5px;"></span></label>
+				</div>
+				<div class="index-top text">商品分类名称</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<!--end of top container -->
+
+		<!-- Checkbox to toggle the menu -->
+		<input type="checkbox" id="tm" />
+		<!-- The menu -->
+		<ul class="sidenav">
+			<li><a href="#"><b>水果</b></a></li>
+			<li><a href="#"><b>蔬菜</b></a></li>
+			<li><a href="#"><b>日用品</b></a></li>
+			<li><a href="#"><b>纸巾</b></a></li>
+			<li><a href="#"><b>饮料</b></a></li>
+			<li><a href="#"><b>外卖	</b></a></li>
+		</ul>
+		<!-- Content area -->
+		<section>
+			<div class="item-list content">
+				<div class="item-list image">
+					<img src="img/shop-describe.png" /> 
+				</div>
+				<div style="color: white; background-color: red;font-weight: bold;font-size:90%;padding: 2px; border-radius: 100%; font-style: normal; position: absolute; right: 0;">特</div>
+				<div class="item-list text">
+					<div class="item-list text item-name">山东红富士山东红富士</div> <br><em style="text-decoration:line-through;">30元/500克</em>
+					<div class="item-list text item-price">￥20元<span style="color: black;">/500克</span></div><br>
+					<div class="item-list text item-describe">已销售：3kg</div>库存：5kg
+				</div>
+				<div style="text-align: right;" ><img  data-toggle="modal" data-target="#buy" src="img/buy-button.png" width="55px"/></div>
+			</div>
+		</section>
+			
+		
+		<div class='shop-car'>
+			<img src='img/shop-car.png' width="60px">
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" style="border: 0;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<span style="font-size: 120%; font-weight: bold;">商品名称</span><br />
+						<span style="font-size: 110%; color: red;">20元</span>/500克<br />
+						<span style="font-weight: bold;">规格：</span> <br />
+						<div>
+							<div class="item-standard">小份(500克)</div>
+							<div style="float: right;">
+								<img src="img/sub.png" width="20px" />
+								<input type="text" style="width: 40px;height: 23px;text-align: center;">
+								<img src="img/plus.png" width="20px"/>
+							</div>
+						</div>
+						<div>
+							<div class="item-standard">中份(1000克)</div>
+							<div style="float: right;">
+								<img src="img/sub.png" width="20px" />
+								<input type="text" style="width: 40px;height: 23px;text-align: center;">
+								<img src="img/plus.png" width="20px"/>
+							</div>
+						</div>
+						<div>
+							<div class="item-standard">大份(1500克)</div>
+							<div style="float: right;">
+								<img src="img/sub.png" width="20px" />
+								<input type="text" style="width: 40px;height: 23px;text-align: center;">
+								<img src="img/plus.png" width="20px"/>
+							</div>
+						</div>
+						
+					</div>
+					<div class="modal-footer" style="text-align: center;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary">加入购物车</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='shop-car'>
+			<img src='img/shop-car.png' width="60px">
+		</div>
+		<div class='item-list-bottom'>
+			<span>共30元</span>
+			<span style="float:right;margin-right: 1%;">差10元起送</span>
+		</div>
+	</body>
+</html>

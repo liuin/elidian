@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/buttons.css">
+   		<link rel="stylesheet" href="css/shop.css">
+   		<link rel="stylesheet" href="css/jquery.raty.css">
+   		<link rel="stylesheet" href="css/order-detail.css" />
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script>
+   		<script src="js/jquery.raty.js"></script>
+		<title>二里店</title>
+	</head>
+	<body>
+		<style>
+			#star{
+				position: relative;
+				display: inline-block;
+			}
+			#star1{
+				position: relative;
+				display: inline-block;
+			}
+		</style>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+				</div>
+				<div class="index-top text">评论</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<!--end of top container -->
+		<div class="starts">
+			送货速度
+			<div id="star"></div>
+			<div id="result"></div>
+			<br />
+			服务质量
+			<div id="star1"></div>
+			<div id="result"></div>
+		</div>
+		<div class="split">评价</div>
+		<div class="judge-content">
+			<textarea maxlength="300" placeholder="评论内容..."></textarea>
+		</div>
+		<div class="button">
+			提交
+		</div>
+		<script>
+			$('#star').raty({
+				path:"img",
+				click:function(score, evt){
+					alert(score);
+				}
+			});
+			$('#star1').raty({
+				path:"img",
+				click:function(score, evt){
+					alert(score);
+				}
+			});
+		</script>
+	</body>
+</html>

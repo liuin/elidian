@@ -1,0 +1,80 @@
+#jPanelMenu-menu{
+	background-color: #F3F3F3;
+
+}
+#jPanelMenu-menu li{
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 120%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-bottom: solid 1px #000000;
+}
+#jPanelMenu-menu a{
+	color: #000000;
+}
+.jPanelMenu-panel{
+
+}
+.item-list.content{
+	border-bottom: solid #CCCCCC 1px;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+.item-list.image{
+	position: relative;
+	display: inline-block;
+	width: 85px;
+	float: left;
+}
+.item-list.image img{
+	border-radius: 15%;
+	margin: 5%;
+}
+.item-list.text{
+	position: relative;
+	display: inline-block;	
+	padding-top: 1%;
+}
+.item-list.text.item-name{
+	font-weight: bold;
+	word-break: break-all;
+	font-size: 120%;
+}
+.item-list.text.item-price{
+	padding-top: 0;
+	font-size: 120%;
+	color: #FF0000;
+}
+.item-list.text.item-describe{
+	bottom: 0;
+	padding-top: 5%;
+	font-size: 90%;
+}
+.item-list.content span{
+	color: red;
+	font-size: 90%;
+	padding-top: 53px;
+}
+.item-list-bottom{
+	position: fixed;
+	color: yellow;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background-color: red;
+	font-size: 130%;
+	padding-top: 2.5%;
+	font-weight: bold;
+	height: 10%;
+}
+.shop-car{
+	position: fixed;
+	bottom: 0;
+	padding-left:4% ;
+	padding-bottom: 4%;
+	z-index: 10;
+}
+.shop-car img{
+	border-radius: 100%;
+}

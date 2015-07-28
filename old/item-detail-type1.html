@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/buttons.css">
+   		<link rel="stylesheet" href="css/shop.css"> 
+   		<link rel="stylesheet" href="css/item-list.css" />
+  		<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   		<link rel="stylesheet" href="css/shop-car.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/order-detail.css" />
+   		<link rel="stylesheet" href="css/item.css" />
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script>
+		<title>二里店</title>
+	</head>
+	<body>
+		<style>
+			.item-standard{
+				position: relative;
+				display: inline-block;
+				border: 1px solid #CCCCCC;
+				padding: 1%;
+				margin: 1%;
+				border-radius: 5px;
+				font-size: 90%;
+			}
+			.myalert{
+				text-align: center;
+				position: fixed; 
+				border-radius: 5%;
+				font-weight: bold;
+				width: 70%;
+				margin-left: 15%;
+				font-size: 120%;
+				padding: 5%;
+				background-color: #EEEEEE; 
+				top: 35%;
+				opacity: 0.8;
+				visibility: hidden;
+			}
+		</style>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+				</div>
+				<div class="index-top text">商品名称</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<!--end of top container -->
+		<div id="carousel-example-generic" class=" slide" data-ride="carousel">
+	  		<!-- Wrapper for slides -->
+	  		<div class="carousel-inner" role="listbox">
+	    		<div class="item active describe-img">
+	      			<img src="img/shop-img.png" alt="..."  style="width: 100%;height: 260px;">
+	    		</div>
+		    	<div class="item describe-img">
+		      		<img src="img/item-img1.png" alt="..."  style="width: 100%;height: 260px;">
+		    	</div>
+	  		</div>
+		</div>
+		<div class="item-describe" style="padding-bottom: 5%;">
+			商品价格
+			<span style="border: 1px solid;font-size: 170%; font-weight: bold;border-radius: 50%; background-color: #4BD963; color: white;">&nbsp;￥25元&nbsp;&nbsp;</span>
+		</div>
+		<div class="item-describe">
+			规格<br />
+			<div class="item-standard">大份(1500克)</div>
+			<div class="item-standard">大份(1500克)</div>
+			<div class="item-standard">大份(1500克)</div>
+		</div>
+		<div class="item-describe">
+			数量
+			<div style="float: right;">
+				<img src="img/sub.png" width="20px" />
+				<input type="text" style="width: 40px;height: 23px;text-align: center;">
+				<img src="img/plus.png" width="20px"/>
+			</div>
+		</div>
+		<div class="item-describe">
+			商品描述<br />
+			<p style="color: black;font-weight: normal;margin: 1%;">商品具体描述商品具体描述商品具体描述商品具体描述商品具体描述商品具体描述</p>
+		</div>
+		<div style="margin-bottom: 15%;"></div>
+		<div class="item-function">
+			<table>
+				<tr>
+					<th style="border-right: 1px solid;"><a href="#">立即购买</a></th>
+					<th><a onclick="myalert();">加入购物车</a></th>
+				</tr>
+			</table>
+		</div>
+		<div class="myalert">
+			<span class="glyphicon glyphicon-ok"></span>
+			已经加入购物车
+		</div>
+		<script>
+			function myalert(){
+				$(".myalert").attr("style","visibility:visible;")
+				setTimeout(function(){
+					$(".myalert").hide();	
+				},1000);
+			}
+		</script>
+	</body>
+</html>

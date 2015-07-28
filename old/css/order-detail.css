@@ -1,0 +1,56 @@
+.split{
+	background-color: #EEEEEE ;
+	padding: 2%;
+	font-weight: bold;
+}
+.describe{
+	color: orange;
+	font-weight: bold;
+	width: 70%;
+}
+table{
+	width: 100%;
+
+}
+th {
+	padding: 1%;
+}
+.bought-item span{
+	color: orange;
+	
+}
+.bought-item{
+	padding: 1%;
+	border-bottom: 1px solid #CCCCCC;
+}
+.bought-item th{
+	width: 30%;
+	word-break: break-all;
+}
+.button{
+	background-color: red;
+	width: 80%;
+	position: relative;
+	color: white;
+	margin-left: 10%;
+	font-weight: bold;
+	margin-top: 5%;
+	border-radius: 4%;
+	margin-bottom: 5% ;
+}
+.judge-content{
+	margin: 2%;
+	position: relative;
+	height: 120px;
+	padding: 1%;
+}
+.judge-content textarea{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	border: 0;
+}
+.starts{
+	padding: 2%;
+	font-weight: bold;
+}

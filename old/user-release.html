@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html language="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/shop.css"> 
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script> 
+		<title>二里店</title>
+		<style>
+			.user-release-item table{
+				width: 100%;
+			}
+			.user-release-item tr{
+				border-bottom: 1px #CCCCCC solid;
+			}
+			.user-release-item th{
+				padding: 1%;
+			}
+			.user-release-item img{
+				border-radius: 5px;
+			}
+			.top-table{
+				width: 100%;
+				background-color: #EEEEEE;
+			}
+			.top-table th{
+				
+				text-align: center;
+				padding: 2%;
+			}
+		</style>
+	</head>
+	<body>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+				</div>
+				<div class="index-top text">我的二手商品</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<!--end of top container -->
+		<table class="top-table">
+			<tr>
+				<th style="border-right: 1px solid;color: #F6F6F6;"><span style="color: black;">我发布的</span></th>
+				<th>我参与的</th>
+			</tr>
+		</table>
+		<div class="user-release-item">
+			<table>
+				<tr>
+					<th style="width: 70px;"><img src="img/shop-describe.png"/></th>
+					<th>攀西水果</th>
+					<th>已发布</th>
+					<th>2015-12-3</th>
+					<th data-toggle="dropdown" aria-expanded="false" text-align: center;">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						    处理 
+						  </button>
+						  <ul class="dropdown-menu" role="menu">
+						    <li><a href="#">修改</a></li>
+						    <li><a href="#">成交</a></li>
+						    <li><a href="#">删除</a></li>
+						  </ul>
+						</div>
+					</th>
+					  
+				</tr>
+			</table>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body">
+						确认删除该条信息？
+					</div>
+					<div class="modal-footer" style="text-align: center;">
+						<button type="button" class="btn btn-default" data-dismiss="modal">否</button>
+						<button type="button" class="btn btn-primary">是</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

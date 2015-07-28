@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html language="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/shop.css"> 
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script> 
+		<title>二里店</title>
+	</head>
+	<body>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+				</div>
+				<div class="index-top text"><img src="img/index-top-position.png" />人民南路一段</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<div>
+			<img src="img/item-img1.png" style="width: 100%;"/>
+		</div>
+		<!--end of top container -->
+		<div class="shop-list title" style="padding: 0.5%; font-size: 90%;">店铺列表</div>
+		<!-- shop list -->
+		<div class="shop-list">
+			<div class="shop-list content">
+				
+				<div class="shop-list image">
+					<img src="img/shop-describe.png" /> 
+				</div>
+				<div style="right: 0; margin: 3%; display: inline-flex; position: absolute;font-size: 80%;background-color: palegreen;border-radius: 15%;padding: 0.5%;">
+					营业中
+				</div>
+				<div class="shop-list text">
+					<div class="shop-list text shop-name ">
+						变形金刚加油站
+						<span style="background-color: red;color: white;padding: 0.3%;border-radius: 3px;">币</span>
+					</div><br>
+					<div class="shop-list text shop-describe">
+						店铺星级：<img src="img/stars.png" style="width: 60px;"/>
+						粉丝 293
+					</div><br>
+					<div class="shop-list text shop-describe">店铺地址：xxx路口</div>
+				</div>
+			</div>
+			<div class="shop-list shop-item">
+				<div class="shop-list bottom item" data-toggle="modal" data-target="#shop-tel">电话</div>
+				<div class="shop-list bottom item">到这里去</div>
+				<div class="shop-list bottom item">店铺介绍</div>
+				<div class="shop-list bottom item">收藏<em>1254</em></div>
+			</div>
+		</div>
+		
+		<!-- end of shop list -->		
+		<!-- Modal -->
+		<div class="modal fade" id="shop-tel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">请选择下面电话进行拨打</h4>
+					</div>
+					<div class="modal-body">
+						138859345345<br />
+						138859345345<br />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bottom container-->
+		<div style="margin-bottom: 15%;"></div>
+		<div class="index-bottom">
+			<div class="index-bottom text"><a>首页</a></div>
+			<div class="index-bottom text"><a>周边店铺</a></div>
+			<div class="index-bottom text"><a>社区市场</a></div>
+			<div class="index-bottom text"><a>社区帮帮</a></div>
+		</div>
+		<!--end of bottom container-->
+	</body>
+</html>

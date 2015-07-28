@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="css/bootstrap.min.css">
+   		<link rel="stylesheet" href="css/font-awesome.min.css" />
+   		<link rel="stylesheet" href="css/shop.css"> 
+   		<script src="js/jquery.js"></script>
+   		<script src="js/bootstrap.js"></script> 
+		<title>二里店</title>
+	</head>
+	<body>
+		<style>
+			.bottom{
+				background-color: red;
+				color: white;
+				text-align: center;
+				font-size: 120%;
+				font-weight: bold;
+				padding: 2%;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
+		</style>
+		<!--top container -->
+		<div class="top-container">
+			<div class="index-top">
+				<div class="index-top back-img">
+					<i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+				</div>
+				<div class="index-top text">店铺名称</div>
+				<div class="index-top user-image">
+					<img src="img/user-img.png" />
+				</div>
+			</div>
+			<div class="top-image"></div>
+		</div>
+		<div class="top-split"></div>
+		<!--end of top container -->
+		<div class="shop-img" style="width: 100%; border: 1px solid;">
+			<img src="img/shop-img.png" width="32%"/>
+			<img src="img/shop-img.png" width="32%"/>
+			<img src="img/shop-img.png" width="32%"/>
+		</div>
+		<div class="shop-detail">营业时间：<span>00:00-24:00</span></div>
+		<div class="shop-detail">地址：<span>火星大街3号</span></div>
+		<div class="shop-detail">描述：</div>
+		<div class="shop-detail describe">xxxxxooooooxxxxxxxxxxxxxooooooooooooooxxxxxxxxooooooo</div>
+		<div class="shop-detail">评价(45)</div>
+		<div class="shop-detail judge">
+			<div class="shop-detail judge user-info">
+				<img src="img/user-img.png" />
+				<span>刘XX</span>
+				<span style="font-size: 50%;color: #777777;">2015.5.11</span>		
+			</div>
+			<div class="shop-detail judge judge-info">这个水果还不错XXXXXXXXXXXXXXXXXOOOOOOOOOOOOOOOOOOOOOO</div>
+		</div>
+		<div class="shop-detail judge">
+			<div class="shop-detail judge user-info">
+				<img src="img/user-img.png"/>
+				<span>刘XX</span>
+				<span style="font-size: 50%;color: #777777;">2015.5.11</span>		
+			</div>
+			<div class="shop-detail judge judge-info">这个水果还不错XXXXXXXXXXXXXXXXXOOOOOOOOOOOOOOOOOOOOOO</div>
+		</div>		
+		<!-- bottom container-->
+		<div class="bottom" data-toggle="modal" data-target="#shop-tel">
+			<img src="img/shop-tel.png" width="25px" />
+			拨打电话
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="shop-tel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">请选择下面电话进行拨打</h4>
+					</div>
+					<div class="modal-body">
+						138859345345<br />
+						138859345345<br />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end of bottom container-->
+	</body>
+</html>

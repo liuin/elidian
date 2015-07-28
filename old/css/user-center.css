@@ -1,0 +1,28 @@
+.user-center{
+	border-bottom: solid 1px #CCCCCC;
+}
+.user-center.user-image{
+	position: relative;
+	display: inline-block;
+	border-bottom: 0;
+	padding: 1%;
+}
+.user-center.user-info{
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 120%;
+	border-bottom: 0;
+}
+.user-center.split{
+	height: 15px;
+	background-color: #F2F2F2;
+}
+.user-center.function{
+	font-size: 110%;
+	font-weight: bold;
+	padding: 2%;
+}
+a{
+	color: #000000;
+}

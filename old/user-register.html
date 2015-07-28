@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
+      <link rel="stylesheet" href="css/buttons.css">
+      <link rel="stylesheet" href="css/shop.css"> 
+      <link rel="stylesheet" href="css/order-detail.css" />
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+    <title>二里店</title>
+  </head>
+  <body>
+    <style>
+      tr{
+        border-bottom: solid 1px #CCCCCC;
+        padding: 2%;
+        font-weight: bold;
+      }
+      input{
+        border: 0;
+        font-weight: normal;
+        width: 80%;
+      }
+      label.get-confirm-code,label.get-confirm-code:hover{
+        background:red;
+        color:#fff;
+        width:auto;
+      }
+      label.get-confirm-time, label.get-confirm-time:hover{
+        background:#ccc;
+      }
+      .regist-top{
+        background: #FF2939;
+        padding: 7%;
+        padding-left: 28%;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .register-tr-row-2 th:nth-child(2) input {}
+    </style>
+    <!--top container -->
+    <div class="top-container">
+      <div class="index-top">
+        <div class="index-top back-img">
+          <i class="icon-angle-left icon-2x" style="color: red; padding: 10%;"></i>
+        </div>
+        <div class="index-top text">注册</div>
+        <div class="index-top user-image">
+          <img src="img/user-img.png" />
+        </div>
+      </div>
+      <div class="top-image"></div>
+    </div>
+    <div class="top-split"></div>
+    <!--end of top container -->
+    <div class="regist-top">
+      &nbsp;&nbsp;&nbsp;感谢您的到来，二里店是一个<br />专注于服务社区熟人与熟客的圈子
+    </div>
+    <table>
+      <tr class="register-tr">
+        <th>邀请码(选填)</th>
+        <th><input type="text" /></th>
+        <th></th>
+      </tr>
+      <tr class="register-tr-row-2 register-tr">
+        <th>手机号码</th>
+        <th><input id="vad-code" class="" type="text" /></th>
+        <th><label for="vad-code" class="btn  get-confirm-code"><span class="sp1">获取验证码</span><span class="count"></span></label></th>
+      </tr>
+      <tr class="register-tr">
+        <th>验证码</th>
+        <th><input type="text" /></th>
+        <th></th>
+      </tr>
+    </table>
+    <div class="button">
+      注册
+    </div>
+<script>
+  $(document).ready(function() {
+    //获取验证码
+    var sec = 10;
+    $('.get-confirm-code').on('click',function  () {
+      if ($(this).hasClass('get-confirm-time')) {
+        return false;
+      }
+      $(this).find('.sp1').html('请输入验证码');
+      $(this).addClass('get-confirm-time');
+      count($(this).find('.count'));
+    })
+    
+    function count (obj) {
+      obj.html('('+sec+')');
+      sec--;
+      setTimeout(
+        function(){
+          if (sec == 0) {
+            obj.parent().removeClass('get-confirm-time').find('.sp1').html('再试一次');
+            obj.empty();
+            sec = 60;
+          }else {
+            count(obj);
+          }
+        }, 1000)
+    }
+
+  })  
+</script>
+  </body>
+</html>
