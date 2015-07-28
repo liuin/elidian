@@ -1,59 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <script type="text/javascript">
-    function browserRedirect() {
-      var sUserAgent = navigator.userAgent.toLowerCase();
-      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-      var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-      var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-      var bIsAndroid = sUserAgent.match(/android/i) == "android";
-      var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-      var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-
-      if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-        window.location.href = './wap/';
-      } else {
-        //window.location = 'index.html';
-      }
-    }
-
-    browserRedirect();
-  </script>
-  <script type="text/javascript">
-  (function(){
-    'use strict';
-    var Fixmobile = function  () {
-      this.viwep();
-    }
-
-    Fixmobile.width = 640;
-
-    Fixmobile.prototype.viwep = function  (e) {
-      var phoneWidth = parseInt(window.screen.width),
-      phoneScale = phoneWidth/Fixmobile.width,
-      ua = navigator.userAgent,
-      headmate;
-      if (/Android (\d+\.\d+)/.test(ua)){
-        var version = parseFloat(RegExp.$1);
-        // andriod 2.3
-        if(version > 2.3){
-          document.write('<meta name="viewport" content="width=' + Fixmobile.width + ', minimum-scale = ' + phoneScale + ', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-        // andriod 2.3以上
-        }else{
-          document.write('<meta name="viewport" content="width=' + Fixmobile.width + ', target-densitydpi=device-dpi">');
-        }
-        // 其他系统
-      } else {
-        document.write('<meta name="viewport" content="width=' + Fixmobile.width + ', user-scalable=no, target-densitydpi=device-dpi">');
-      }
-    }
-    var newviewport = new Fixmobile();
-  })();
-  </script>
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="renderer" content="webkit">
@@ -69,13 +16,48 @@
   <![endif]-->
   <title>website name</title>
 </head>
-<body class="yh">
+<body class="st page-ask-help">
   <noscript>
     <strong>你的浏览器似乎禁用了 JavaScript。</strong><br />您必须在浏览器中启用JavaScript才能使用本网站的功能。
   </noscript>
-  <div class="container">
-     
-  </div>
+  <header class="container-header container display-box">
+     <a href="#" class="back"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+     <h1 href="#" class="title1">发布帮帮</h1>
+     <div class="user">
+      <a href="#"><img src="images/user-img.png" alt=""></a>
+     </div>
+  </header><!-- /header -->
+
+  <div class="container container-ct container-reward">
+    <form method="post" action="">
+      <div class="form-ground file-phone">
+        <div class="img">
+          <input type="file" name="" id="photo" />
+          <img src="images/ask-help.png" />
+        </div>
+        <p class="p1">
+          照片描述<br />
+          <span class="sp1">(可以不传照片)</span>
+        </p>
+      </div>
+
+      <div class="form-ground form-ground-back ">
+        <div class="display-box">
+          <label class="lb1">回报方式</label>
+          <input class="form-control box-flex" type="text" placeholder="money？ other...."/>
+        </div> 
+      </div>
+      <div class="form-ground form-ground-question">
+        <textarea id="" placeholder="问题描述" class="form-control" rows="" cols=""></textarea>
+      </div>
+
+      <div class="form-ground form-ground-submit">
+        <button class="btn btn-default btn-lg btn-danger btn-block">确定</button>
+      </div>
+
+    </form>
+  </div><!-- /内容 -->
+
   <script type="text/javascript" src="js/asset.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>

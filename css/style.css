@@ -1,0 +1,19 @@
+a {color:#333;}
+body {background:#efeff4;}
+.display-box{display: -webkit-box;display: -ms-flexbox;display: -moz-box; width:100%;}
+.box-flex {box-flex:1;-moz-box-flex:1;-webkit-box-flex:1; }
+
+/*-- container-header  --*/
+.container-header {background:#f7f7f8; height:50px; line-height:50px; border-bottom:1px solid #c8c7cc; margin-bottom:15px;}
+.container-header .title1 {box-flex:1;-moz-box-flex:1;-webkit-box-flex:1; font-size:18px;  text-align:center; line-height:50px; font-weight:bold;}
+.container-header .user img{width:30px; height:30px;}
+
+/*-- form-ground --*/
+.form-ground {background:#fff;border-bottom:1px solid #c8c7cc; margin-left:-15px; margin-right:-15px; padding:15px;position:relative;}
+.file-phone .img{position:relative;width:117px; height:110px; margin:0 auto; margin-bottom:10px;}
+#photo {position:absolute;width:100%;top:0; bottom:0;opacity:0;}
+.file-phone .p1 {text-align:center;font-weight:bold;}
+.file-phone .p1 .sp1 {font-weight:normal;font-size:12px;}
+.form-ground .lb1{padding-top:6px;margin-right:10px;}
+.form-ground-question textarea{height:80px;}
+.container-ct {box-shadow:0 0 5px rgba(0, 0, 0, 0.14);}
