@@ -1,7 +1,9 @@
 a {color:#333;}
 body {background:#efeff4;}
+li {list-style-type:none;}
 .display-box{display: -webkit-box;display: -ms-flexbox;display: -moz-box; width:100%;}
 .box-flex {box-flex:1;-moz-box-flex:1;-webkit-box-flex:1; }
+
 
 /*-- container-header  --*/
 .container-header {background:#f7f7f8; height:50px; line-height:50px; border-bottom:1px solid #c8c7cc; margin-bottom:15px;}
@@ -16,4 +18,24 @@ body {background:#efeff4;}
 .file-phone .p1 .sp1 {font-weight:normal;font-size:12px;}
 .form-ground .lb1{padding-top:6px;margin-right:10px;}
 .form-ground-question textarea{height:80px;}
-.container-ct {box-shadow:0 0 5px rgba(0, 0, 0, 0.14);}
+.container-ct {box-shadow:0 0 5px rgba(0, 0, 0, 0.14); background:#fff;}
+
+/*-- container-call-seller --*/
+.container-call-seller {}
+.container-call-seller .p1 {padding:15px;border-bottom:1px solid #ccc;}
+.list-tel li {line-height:48px;border-bottom:1px solid #ccc;padding-left:15px;padding-right:15px;}
+.list-tel li .glyphicon {margin-right:5px;}
+
+/*-- container-chl --*/
+.container-chl {background: transparent;box-shadow:0 0 0px #A16534;}
+.container-chl .tab-content {background:#fff; border:1px solid #ddd; border-top:0;}
+
+.item-list-chl {background:#fff;border-bottom:1px solid #ddd;padding-left: 15px;padding-right: 15px;padding-top: 3px;padding-bottom: 3px;}
+.item-list-chl > div {width:25%; line-height:42px; text-align:center;}
+.item-list-chl .name {text-align:left;}
+.item-list-chl .btn-group {top: -2px;}
+.container-chl .nav-tabs li {width:50%; text-align:center;}
+.container-chl .nav-tabs {padding-right:0;}
+.container-chl .nav-tabs>li>a {margin-right:0;}
+
+.item-list-chl .control {text-align:right;}
