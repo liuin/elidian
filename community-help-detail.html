@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <title>website name</title>
+</head>
+<body class="st community-help-detail">
+  <noscript>
+    <strong>你的浏览器似乎禁用了 JavaScript。</strong><br />您必须在浏览器中启用JavaScript才能使用本网站的功能。
+  </noscript>
+  <header class="container-header container display-box">
+     <a href="#" class="back"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+     <h1 href="#" class="title1">社区帮帮</h1>
+     <div class="user">
+      <a href="#"><img src="images/user-img.png" alt=""></a>
+     </div>
+  </header><!-- /header -->
+  <div class="container container-bannar">
+    <div class="row">
+      <img src="images/item-img1.png" width="100%" alt="">
+    </div>
+  </div>
+
+
+  <div class="container container-ct container-comhp">
+    <div class="row">
+      <h3 class="comhp-hd col-md-12">社区互助信息</h3>
+      <div class="item-comhp col-md-12">
+         <div class="user">
+           <div class="img fl"><img src="images/user-img.png" alt="用户名"></div>
+           <div class="name">
+             <div class="d1">王小波</div>
+             <div class="zs">雷锋指数：<span class="sp1">302</span></div>
+           </div>
+           <div class="long">距离<span class="sp1">1000m</span></div>
+         </div>
+         <p class="msg">
+           我的电脑坏了有人可以帮忙修吗？<br />
+           回报方式：<span class="sp1">请吃饭</span>
+         </p>
+         <div class="img-ground">
+           <img src="images/shop-img.png" alt="">
+           <img src="images/shop-img.png" alt="">
+         </div>
+         <div class="bar">
+          <a href="#" class="bar-link  ">评论 <span class="sp1">3</span></a><a href="#" class="bar-link ">找人帮他</a><a data-toggle="modal" data-target="#help" href="#" class="bar-link ">我要帮他</a>
+         </div>
+      </div>
+
+      <div class="item-comhp col-md-12">
+         <div class="user">
+           <div class="img fl"><img src="images/user-img.png" alt="用户名"></div>
+           <div class="name">
+             <div class="d1">王小波</div>
+             <div class="zs">雷锋指数：<span class="sp1">302</span></div>
+             <div class="time">4分钟前</div>
+           </div>
+           <div class="long">距离<span class="sp1">1000m</span></div>
+         </div>
+         <p class="msg">
+           我的电脑坏了有人可以帮忙修吗？<br />
+           回报方式：<span class="sp1">请吃饭</span>
+         </p>
+         <div class="bar">
+          <a href="#" class="bar-link  ">评论 <span class="sp1">3</span></a><a href="#" class="bar-link ">找人帮他</a><a data-toggle="modal" data-target="#help" href="#" class="bar-link ">我要帮他</a>
+         </div>
+      </div>      
+
+    </div>
+  </div><!-- /内容 -->
+
+  <div class="comhp-nav">
+    <a href="#">二里店</a>
+    <a href="#">二里宝贝</a>
+    <a href="#">二里帮帮</a>
+    <a href="#">二里能人</a>
+  </div><!-- /底部目录 -->
+
+    <div class="modal-comhp modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <p class="p1">请输入您的联系方式（您的联系方式只有对方可见）</p>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="modal-footer" style="text-align: center;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">发布</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /我要帮他 -->
+
+
+
+  <script type="text/javascript" src="js/asset.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script type="text/javascript">
+  <!--
+    $(document).ready(function() {
+      //删除
+      $('.item-comhp-rp').on('click','.del',function  () {
+        $(this).parents('.item-comhp-rp').fadeOut();
+      })
+    })
+  //-->
+  </script>
+
+</body>
+</html>
