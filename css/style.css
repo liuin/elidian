@@ -80,3 +80,9 @@ li {list-style-type:none;}
 
 .modal-comhp .p1{margin-bottom:10px;}
 
+/*-- swiper-container --*/
+.swiper-container {height:190px;}
+
+/*-- .container-idt1  --*/
+.container-idt1 {background:#fff;}
+.container-idt1 .comhp-hd {border-bottom:1px solid #ddd;}
