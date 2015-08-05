@@ -7,6 +7,12 @@ li {list-style-type:none;}
 .star span{background: url("../images/star-on.png") 0 2px repeat-x;display: inline-block;height: 20px;vertical-align: top;}
 .d-ib {display:inline-block;}
 
+/*-- table1 --*/
+.table1 {margin-bottom:0;}
+.table1 tr td:first-child{padding-left:15px;}
+.table1 tr td:last-child {padding-right:15px;}
+.table1 .sp1 {color:#f60;}
+.table1 .price {font-weight: bold;font-size: 18px;text-align: right;}
 
 /*-- modal --*/
 .modal.fade .modal-dialog {-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: scale(0.2);-ms-transform: scale(0.2);-o-transform: scale(0.2);transform: scale(0.2); }
@@ -191,3 +197,20 @@ body.item-detail-type1 .comhp-nav a{width:50%;}
 .bought-item {padding:0;}
 .bought-item p {line-height:20px; border-bottom:1px solid #ddd; padding-left:15px; padding-top:6px; padding-bottom:6px; padding-right:15px;}
 .container-settlement .title2 {padding:10px 15px; font-size:16px; } 
+.container-settlement {margin-bottom:15px;}
+.container-settlement-yh-ct {padding:10px 15px;border-top:1px solid #ddd;}
+.container-settlement-col {padding:0 15px;border-top:1px solid #ddd;padding-top:10px;padding-bottom:10px;}
+.container-settlement-col label {display:block;padding-top:5px;padding-bottom:5px;}
+.container-settlement-col label input {margin-right:3px;vertical-align:top;}
+.container-settlement-sub {padding-top:10px; padding-bottom:10px; margin-bottom:0;}
+
+/*-- container-shopcar --*/
+.container-shopcar .adresss {padding:10px 15px; border-bottom:1px solid #ddd;}
+.container-shopcar .adresss .glyphicon {padding-top:10px;}
+.time-box {padding:10px 15px; border-bottom:1px solid #ddd;}
+.time-box .form-control {margin-top:10px; margin-bottom:10px;}
+.time-box .btn-bk {text-align:right;}
+.container-shopcar .list-pro-item .msg {padding-right:111px;}
+.container-shopcar .count-ground {position: absolute;top: 52px;right: 15px;margin-top: -21px;}
+.shop-car-footer {background:red;position:fixed;bottom:0;left:0;right:0; height: 52px; padding:10px 15px; box-sizing:border-box;}
+.shop-car-footer p {font-weight:bold; color:yellow;line-height: 34px;}
