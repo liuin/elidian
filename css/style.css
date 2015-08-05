@@ -7,6 +7,7 @@ li {list-style-type:none;}
 .star span{background: url("../images/star-on.png") 0 2px repeat-x;display: inline-block;height: 20px;vertical-align: top;}
 .d-ib {display:inline-block;}
 
+
 /*-- modal --*/
 .modal.fade .modal-dialog {-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: scale(0.2);-ms-transform: scale(0.2);-o-transform: scale(0.2);transform: scale(0.2); }
 .modal.in .modal-dialog {-webkit-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);}
@@ -185,3 +186,8 @@ body.item-detail-type1 .comhp-nav a{width:50%;}
 .container-order-list .table th{text-align:center;}
 .container-order-list .table td:first-child {padding-left:15px;}
 .container-order-list .table .price {color:#f60; font-weight:bold;}
+
+/*-- settlement --*/
+.bought-item {padding:0;}
+.bought-item p {line-height:20px; border-bottom:1px solid #ddd; padding-left:15px; padding-top:6px; padding-bottom:6px; padding-right:15px;}
+.container-settlement .title2 {padding:10px 15px; font-size:16px; } 
