@@ -30,17 +30,19 @@
 
   <div class="container container-ct container-reward">
     <form method="post" action="">
-      <div class="form-ground file-phone">
+      <div class="form-ground file-phone" id="file-phone">
         <div class="img">
           <input type="file" name="" id="photo" />
-          <img src="images/ask-help.png" />
+          <img src="images/ask-help.png" id="hphoto-pic" />
         </div>
-        <p class="p1">
+        <p class="p1"  id="photo-deg">
           照片描述<br />
           <span class="sp1">(可以不传照片)</span>
         </p>
       </div>
-
+      <ul class="addphonte" id="addphonte">
+        <li class="addphonte-item addphonte-item-add" id="addphonte-item-add"></li>        
+      </ul>
       <div class="form-ground form-ground-back ">
         <div class="display-box">
           <label class="lb1">回报方式</label>
