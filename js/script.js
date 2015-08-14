@@ -40,8 +40,7 @@ $(document).ready(function () {
       if($('#addphonte .addphonte-item').length < 2){
         $('#addphonte').hide();
       }
-    }
-    
+    }    
   })
 
 })
