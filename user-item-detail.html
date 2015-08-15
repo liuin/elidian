@@ -86,13 +86,10 @@
   </div><!-- /内容 -->
 
   <!-- Modal -->
-  <div class="modal fade" id="select" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade modal-bottom" id="select" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="modal-body" style="text-align: center;">
           <input type="number" class="form-control" placeholder="填写金额"  /><br />
           <input type="text" class="form-control" placeholder="联系方式(仅卖主可见)" "  /><br />
@@ -102,10 +99,25 @@
     </div>
   </div>
 
-<div class="comhp-nav">
-    <a href="#">我要评论</a>
+<div class="comhp-nav1 comhp-nav">
+    <a data-toggle="modal" data-target="#help" href="#">我要评论</a>
     <a href="#" data-toggle="modal" data-target="#select">我要砍价</a>
 </div>
+
+<div class="modal-comhp modal-bottom modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+            <textarea id="comhp-textarea" class="form-control comhp-textarea" placeholder="请文明发帖"></textarea>            
+          </div>
+          <div class="comhp-footer modal-footer" style="text-align: right;">
+            <label class="fl"><input type="checkbox" name="" id="">转发到我的动态</label>
+            <button type="button" class="btn btn-default">发布</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /我要帮他 -->
 
 
   <script type="text/javascript" src="js/asset.js"></script>

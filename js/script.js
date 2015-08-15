@@ -2,11 +2,19 @@ $(document).ready(function () {
   //弹出框样式
   $('.modal').on('show.bs.modal', function () {
     $(this).show();
+
+    if ($(this).hasClass('modal-bottom')) {
+      return true;    
+    }
+
     var obj = $(this).find('.modal-dialog');
     var wd = ($(window).height() - obj.height()) / 2;
     obj.css({
       'top': wd - 15
     })
+  })
+  $('.modal-bottom').on('shown.bs.modal',function  () {
+    $('#comhp-textarea').focus();        
   })
 
   //phone
@@ -41,6 +49,22 @@ $(document).ready(function () {
         $('#addphonte').hide();
       }
     }    
+  })
+
+  //购物车按钮
+ 
+  if (!isNaN($('.count-ground input').val())) {
+    $('.count-ground input').val(0);
+  } 
+  $('.count-ground .add').on('click',function  () {
+    var getVal = parseInt($(this).nextAll('input').val()) + 1;
+    $(this).nextAll('input').val(getVal);
+  })
+  $('.count-ground .sub').on('click',function  () {
+    var getVal = parseInt($(this).nextAll('input').val()) - 1;
+    if (getVal > -1) {
+      $(this).nextAll('input').val(getVal);
+    }
   })
 
 })
